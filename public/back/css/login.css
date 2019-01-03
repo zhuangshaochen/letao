@@ -15,4 +15,6 @@ body .container .mtop {
 html .container .panel-title,
 body .container .panel-title {
   height: 40px;
+  line-height: 40px;
+  font-size: 20px;
 }
