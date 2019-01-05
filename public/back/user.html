@@ -66,15 +66,12 @@
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <th>1</th>
-                  <th>itcast</th>
-                  <th>15757771111</th>
-                  <th>正常</th>
-                  <th><button class="btn btn-danger">禁用</button></th>
-                </tr>
+                <!-- 动态页面渲染 -->
               </tbody>
             </table>
+            <div class="pull-right">
+              <ul id="paginator"></ul>
+            </div>
         </div>
       </div>
     </div>
@@ -102,7 +99,27 @@
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
     <script src="lib/bootstrap-validator/js/bootstrapValidator.min.js"></script>
     <script src="lib/nprogress/nprogress.js"></script>
+    <script src="lib/artTemplate/template-web.js"></script>
+    <script src="lib/bootstrap-paginator/bootstrap-paginator.min.js"></script>
     <script src="js/commen.js"></script>
     <script src="js/user.js"></script>
+    <!-- 准备模板 -->
+    <script type="text/html" id="tmp">
+      {{each rows v i}}
+      <tr>
+        <td>{{ i + 1 + (page - 1) * size}}</td>
+        <td>{{v.username}}</td>
+        <td>{{v.mobile}}</td>
+        <td>{{v.isDelete === 1 ? "正常" : "禁用"}}</td>
+        <td data-id="{{v.id}}" data-isDelete="{{v.isDelete}}">
+          {{if v.isDelete === 1}}
+          <button class="btn btn-danger" id="change-status">禁用</button>
+          {{else}}
+          <button class="btn btn-success" id="change-status">启用</button>
+          {{/if}}
+        </td>
+      </tr>
+      {{/each}}
+    </script>
   </body>
 </html>
