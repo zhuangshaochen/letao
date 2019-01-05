@@ -56,7 +56,7 @@
           </ol>
         </div>
         <div class="content-info container-fluid">
-          <button class="btn btn-default">添加分类</button>
+          <button class="btn btn-default" id="addCategory">添加分类</button>
           <!-- 表格渲染 -->
           <table class="table table-bordered mt-20 ">
             <thead>
@@ -66,18 +66,41 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>1</td>
-                <td>户外管</td>
-              </tr>
+             <!-- 动态渲染部分 -->
             </tbody>
           </table>
-  
+          <div class="pull-right">
+            <ul id="paginator"></ul>
+          </div>
         </div>
       </div>
     </div>
+    <!-- 添加模态框 -->
+    <div class="modal fade" id="category" tabindex="-1" >
+        <div class="modal-dialog modal-sm" >
+          <div class="modal-content">
+            <form id="form">
+              <div class="modal-header form-group">
+                <button type="button" class="close" data-dismiss="modal" ><span >&times;</span></button>
+                <h4 class="modal-title">添加分类</h4>
+              </div>
+              <div class="modal-body ">
+                <div class="form-group">
+                  <input type="text" class="form-control" name="categoryName" placeholder="请添加分类">
+                </div>
+              </div>
+              <div class="modal-footer form-group">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="submit" class="btn btn-primary" id="add-categroy">添加</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
 
 
+
+    <!-- 退出模态框 -->
     <div class="modal fade" id="myModal" tabindex="-1" >
       <div class="modal-dialog modal-sm" >
         <div class="modal-content">
@@ -100,6 +123,18 @@
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
     <script src="lib/bootstrap-validator/js/bootstrapValidator.min.js"></script>
     <script src="lib/nprogress/nprogress.js"></script>
+    <script src="lib/artTemplate/template-web.js"></script>
+    <script src="lib/bootstrap-paginator/bootstrap-paginator.min.js"></script>
     <script src="js/commen.js"></script>
+    <script src="js/first.js"></script>
+    <!-- 准备模板 -->
+    <script type="text/html" id="tmp">
+      {{each rows v i}}
+      <tr>
+        <td>{{ i + 1  + ( page - 1 ) * size }}</td>
+        <td>{{ v.categoryName }}</td>
+      </tr>
+      {{/each}}
+    </script>
   </body>
 </html>

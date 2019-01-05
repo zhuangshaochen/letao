@@ -2,12 +2,12 @@
 // 进度条效果
 $(document).ajaxStart(function() {
     NProgress.start();
-    console.log("开始")
+    // console.log("开始")
   })
 
 $(document).ajaxStop(function() {
     NProgress.done();
-    console.log("结束")
+    // console.log("结束")
 });
 
 // 判断是否登录
