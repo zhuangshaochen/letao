@@ -1,0 +1,144 @@
+@import "commen";
+
+
+body {
+  width: 100%;
+  height: 1500px;
+  .box {
+    width: 100%;
+    height: 100%;
+    .aside-left {
+      position: fixed;
+      width: 180px;
+      height: 100%;
+      background-color: #222d32;
+      left: 0;
+      top: 0;
+      z-index: 99;
+      transition: all 1s;
+      &.current {
+        transform: translateX(-180px);
+      }
+      h3 {
+        padding: 0;
+        margin: 0;
+        height: 50px;
+        background-color: #367fa9;
+        line-height: 50px;
+        text-align: center;
+        a {
+          color: #fff;
+        }
+      }
+      .user-photo {
+        text-align: center;
+        padding-top: 30px;
+        img {
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+        }
+        p {
+          height: 40px;
+          line-height: 40px;
+          color: #fff;
+          font-size: 16px;
+        }
+      }
+      ul {
+        li {
+          padding-left: 40px;
+          border-left:3px solid rgba(0,0,0,0);
+          &.current {
+            background-color: #1D1F21;
+            border-left:3px solid #006699;
+          }
+        }
+        a {
+          display: block;
+          height: 40px;
+          line-height: 40px;
+          color: #fff;
+          i {
+            margin-right: 5px;
+          }
+        }
+        .classify {
+          height: 40px;
+          line-height: 40px;
+          color: #fff;
+          cursor: pointer;
+          i {
+            margin-right: 5px;
+          }
+        }
+        .list {
+          display: none;
+          padding: 0;
+          border-left:none;
+          &.falg {
+            display:block;
+          }
+          p {
+            padding: 0;
+            margin: 0;
+            padding-left: 60px;
+            border-left:3px solid rgba(0,0,0,0);
+            &.current {
+              background-color: #1D1F21;
+              border-left:3px solid #006699;
+            }
+          }
+        }
+      }
+    }
+    .content {
+      width: 100%;
+      height: 100%;
+      background-color: yellow;
+      padding-left: 180px;
+      padding-top: 50px;
+      transition: all 1s;
+      &.current {
+        padding-left: 0;
+      }
+      .content-header {
+        position: fixed;
+        height: 50px;
+        width: 100%;
+        background-color: #3c8dbc;
+        top: 0;
+        left: 0;
+        padding-left: 180px;
+        transition: all 1s;
+        &.current {
+          padding-left: 0;
+        }
+        a {
+          display: block;
+          width: 50px;
+          height: 50px;
+          text-align: center;
+          line-height: 50px;
+          font-size: 20px;
+          color: #fff;
+        }
+      }
+      .content-info {
+        .info-left,
+        .info-right {
+          height: 400px;
+          width: 48%;
+          background-color: pink;
+        }
+      }
+    }
+  }
+  .modal-content {
+    .modal-body {
+      p {
+        color: #a94442;
+      }
+    }
+  }
+}
