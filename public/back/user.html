@@ -10,7 +10,7 @@
       rel="stylesheet"
       href="lib/bootstrap-validator/css/bootstrapValidator.min.css"
     />
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/user.css" />
     <link rel="stylesheet" href="lib/nprogress/nprogress.css">
   </head>
   <body>
@@ -51,11 +51,30 @@
         <div class="content-nav  container-fluid mt-20">
           <ol class="breadcrumb">
             <li><a href="index.html">管理系统</a></li>
-            <li><a href="#">首页</a></li>
+            <li><a href="#">用户管理</a></li>
           </ol>
         </div>
-        <div class="content-info">
-  
+        <div class="content-info container-fluid">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>序号</th>
+                  <th>用户名</th>
+                  <th>手机号</th>
+                  <th>状态</th>
+                  <th>操作</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>1</th>
+                  <th>itcast</th>
+                  <th>15757771111</th>
+                  <th>正常</th>
+                  <th><button class="btn btn-danger">禁用</button></th>
+                </tr>
+              </tbody>
+            </table>
         </div>
       </div>
     </div>
@@ -84,6 +103,6 @@
     <script src="lib/bootstrap-validator/js/bootstrapValidator.min.js"></script>
     <script src="lib/nprogress/nprogress.js"></script>
     <script src="js/commen.js"></script>
-    <script src="js/index.js"></script>
+    <script src="js/user.js"></script>
   </body>
 </html>
