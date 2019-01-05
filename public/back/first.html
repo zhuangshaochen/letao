@@ -10,7 +10,7 @@
       rel="stylesheet"
       href="lib/bootstrap-validator/css/bootstrapValidator.min.css"
     />
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/first.css" />
     <link rel="stylesheet" href="lib/nprogress/nprogress.css">
   </head>
   <body>
@@ -51,10 +51,27 @@
         <div class="content-nav  container-fluid mt-20">
           <ol class="breadcrumb">
             <li><a href="index.html">管理系统</a></li>
-            <li><a href="#">首页</a></li>
+            <li><a href="#">分类管理</a></li>
+            <li><a href="#">一级分类</a></li>
           </ol>
         </div>
-        <div class="content-info">
+        <div class="content-info container-fluid">
+          <button class="btn btn-default">添加分类</button>
+          <!-- 表格渲染 -->
+          <table class="table table-bordered mt-20 ">
+            <thead>
+              <tr>
+                <th>序号</th>
+                <th>一级分类</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>户外管</td>
+              </tr>
+            </tbody>
+          </table>
   
         </div>
       </div>
@@ -84,6 +101,5 @@
     <script src="lib/bootstrap-validator/js/bootstrapValidator.min.js"></script>
     <script src="lib/nprogress/nprogress.js"></script>
     <script src="js/commen.js"></script>
-    <script src="js/index.js"></script>
   </body>
 </html>

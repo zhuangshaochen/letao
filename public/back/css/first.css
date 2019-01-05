@@ -142,9 +142,11 @@ body .box .content .content-header a {
 body .modal-content .modal-body p {
   color: #a94442;
 }
-.content-info .info-left,
-.content-info .info-right {
-  height: 400px;
-  width: 48%;
-  background-color: pink;
+.content-info td,
+.content-info th {
+  text-align: center;
+}
+.content-info td:nth-child(1),
+.content-info th:nth-child(1) {
+  width: 20%;
 }
