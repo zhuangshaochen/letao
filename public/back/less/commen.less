@@ -15,6 +15,17 @@ ul {
 .mt-20 {
     margin-top:20px;
 }
+.table-bordered>tbody>tr>td,
+.table-bordered>tbody>tr>th,
+.table-bordered>tfoot>tr>td,
+.table-bordered>tfoot>tr>th,
+.table-bordered>thead>tr>td, 
+.table-bordered>thead>tr>th {
+    vertical-align: middle;
+}
+th,td {
+  text-align:center;
+}
 body {
   width: 100%;
   height: 1500px;
@@ -145,6 +156,16 @@ body {
       p {
         color: #a94442;
       }
+    }
+  }
+}
+
+// second.html样式
+.dropdown-menu {
+  li {
+    padding-left:10px;
+    &:hover {
+      background-color: rgba(0,0,0,.3);
     }
   }
 }
