@@ -1,0 +1,38 @@
+@import "commen";
+.lt_content {
+    position: relative;
+    background-color: #fff;
+    .content-nav {
+        ul {
+            padding:10px;
+            li {
+                float : left;
+                width: 33.3%;
+            }
+        }
+    }
+    .content-pro {
+        ul {
+            padding:10px;
+            li {
+                width: 48%;
+                border:1px solid #ccc;
+                float:left;
+                text-align: center;
+                padding:5px;
+                margin-bottom : 10px;
+                &:nth-child(even) {
+                    margin-left:4%;
+                }
+                img {
+                    width: 130px;
+                    margin:0 auto;
+                }
+                .line {
+                    text-decoration: line-through;
+                    margin:0 5px;
+                }
+            }
+        }
+    }
+}

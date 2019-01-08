@@ -1,0 +1,125 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+img {
+  display: block;
+  width: 100%;
+}
+.lt_container {
+  width: 100%;
+  height: 100%;
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding-top: 45px;
+  padding-bottom: 55px;
+  position: relative;
+}
+.lt_container p {
+  margin: 0;
+  padding: 0;
+}
+.lt_container .lt_header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 45px;
+  background-color: #006699;
+  padding: 0 45px;
+}
+.lt_container .lt_header a {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  top: 0;
+  color: #fff;
+}
+.lt_container .lt_header a.left {
+  left: 0;
+}
+.lt_container .lt_header a.right {
+  right: 0;
+}
+.lt_container .lt_header p {
+  text-align: center;
+  line-height: 45px;
+  font-size: 18px;
+  color: #fff;
+}
+.lt_container .lt_content {
+  width: 100%;
+  height: 100%;
+}
+.lt_container .lt_footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 55px;
+  background-color: #006699;
+}
+.lt_container .lt_footer ul {
+  overflow: hidden;
+}
+.lt_container .lt_footer li {
+  float: left;
+  width: 25%;
+  text-align: center;
+  padding-top: 8px;
+}
+.lt_container .lt_footer li a {
+  color: #fff;
+  display: block;
+}
+.lt_container .lt_footer li a.current {
+  color: orange;
+}
+.lt_container .lt_footer li a p {
+  color: #fff;
+}
+.lt_container .lt_footer li a p.current {
+  color: orange;
+}
+.lt_content {
+  position: relative;
+  background-color: #fff;
+}
+.lt_content .content-nav ul {
+  padding: 10px;
+}
+.lt_content .content-nav ul li {
+  float: left;
+  width: 33.3%;
+}
+.lt_content .content-pro ul {
+  padding: 10px;
+}
+.lt_content .content-pro ul li {
+  width: 48%;
+  border: 1px solid #ccc;
+  float: left;
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.lt_content .content-pro ul li:nth-child(even) {
+  margin-left: 4%;
+}
+.lt_content .content-pro ul li img {
+  width: 130px;
+  margin: 0 auto;
+}
+.lt_content .content-pro ul li .line {
+  text-decoration: line-through;
+  margin: 0 5px;
+}
